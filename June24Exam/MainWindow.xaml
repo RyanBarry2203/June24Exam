@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Booking Details" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="55,0,0,0" FontSize="25"/>
+        <DatePicker Grid.Column="0" Grid.Row="1" Name="dpBookingDate" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="267,0,0,0"/>
+
+        <Label Grid.Column="1" Grid.Row="1" Content="New Booking" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="35,0,0,0" FontSize="25"/>
+
+        <ListBox Grid.Column="0" Grid.Row="2" Name="lbBookings" Margin="5"/>
+
+        <Label Grid.Column="0" Grid.Row="3" Content="Capacity : " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,0,0,0"/>
+        <Label Grid.Column="0" Grid.Row="3" Content="Bookings : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,10,0,0"/>
+        <Label Grid.Row="3" Content="Available : " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
+        <Button Grid.Column="0" Grid.Row="3" Name="btnAddBooking" Content="Delete Booking" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,13,0,0" Click="btnAddBooking_Click" Width="124"/>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="20">
+            <DatePicker Name="dpNewBookingDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20"/>
+            <TextBox Name="tbxNumOfCustomers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="200" Text="Number Of Customers"/>
+            <TextBox Name="tbxCustomerName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="200" Text="Customer Name"/>
+            <TextBox Name="tbxCustomerContactNumber" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="200" Text="Contact Number"/>
+            <Button Name="btnCustomerSearch" Content="Customer Search" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAddNewBooking_Click" Width="150"/>
+        </StackPanel>
+
+
+
     </Grid>
 </Window>
