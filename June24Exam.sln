@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "June24Exam", "June24Exam\June24Exam.csproj", "{EC729DAF-0ECA-4DB2-91CE-196D3E89A2CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManager", "DataManager\DataManager.csproj", "{EAD24C66-5F8C-45BE-9EBD-3EBC07C78D69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EC729DAF-0ECA-4DB2-91CE-196D3E89A2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC729DAF-0ECA-4DB2-91CE-196D3E89A2CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC729DAF-0ECA-4DB2-91CE-196D3E89A2CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD24C66-5F8C-45BE-9EBD-3EBC07C78D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD24C66-5F8C-45BE-9EBD-3EBC07C78D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD24C66-5F8C-45BE-9EBD-3EBC07C78D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD24C66-5F8C-45BE-9EBD-3EBC07C78D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
