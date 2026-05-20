@@ -20,7 +20,6 @@ namespace June24Exam.Models
         public Booking()
         {
 
-            
         }
 
         // methods

@@ -20,11 +20,20 @@ namespace DataManager
                 Customer customer1 = new Customer
                 {
                     Name = "John Doe",
-                    ContactNumber = "123-456-7890"
+                    ContactNumber = "123-456-7890",
+                    Bookings = new List<Booking>()
+                };
+                Customer customer2 = new Customer
+                {
+                    Name = "Jane Smith",
+                    ContactNumber = "098-765-4321",
+                    Bookings = new List<Booking>()
                 };
 
                 // add the customer to the database
                 db.Customers.Add(customer1);
+                db.Customers.Add(customer2);
+                db.SaveChanges();
 
                 // create a new booking for the customer
                 Booking booking1 = new Booking
@@ -33,11 +42,16 @@ namespace DataManager
                     NumberOfParticipants = 4,
                     CustomerId = customer1.CustomerId
                 };
+                Booking booking2 = new Booking
+                {
+                    BookingsDate = new DateTime(2026, 5, 20),
+                    NumberOfParticipants = 2,
+                    CustomerId = customer2.CustomerId
+                };
 
                 // add the booking to the database
                 db.Bookings.Add(booking1);
-
-
+                db.Bookings.Add(booking2);
                 db.SaveChanges();
             }
 

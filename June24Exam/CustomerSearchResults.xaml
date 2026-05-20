@@ -1,0 +1,38 @@
+﻿<Window x:Class="June24Exam.CustomerSearchResults"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:June24Exam"
+        mc:Ignorable="d"
+        Title="CustomerSearchResults" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Matching Customers" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="55,0,0,0" FontSize="20"/>
+        <ListBox Grid.Column="0" Grid.Row="2" Name="lbCustomerSearchResults" Margin="5" SelectionChanged="lbCustomerSearchResults_SelectionChanged"/>
+
+        <Label Grid.Column="1" Grid.Row="1" Content="Create New Customer" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="55,0,0,0" FontSize="20"/>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="20">
+            <TextBox Name="tbxNewCustomerName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="300" Text="Customer Name"/>
+            <TextBox Name="tbxNewCustomerContactNumber" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="300" Text="Contact Number"/>
+            <TextBlock Name="tbxNewCustomerDateOfBooking" Text="Date of Booking - " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="300" TextWrapping="Wrap"/>
+            <TextBlock Name="tbxNewCustomerNumOfCustomers" Text="Number of Customers - " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20" Width="300" TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <Button Grid.Row="3" Grid.Column="1" Name="btnCreateNewCustomer" Content="Create Booking" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnCreateNewCustomer_Click" Width="170" Height="45"/>
+
+    </Grid>
+</Window>
